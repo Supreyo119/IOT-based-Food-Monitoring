@@ -1,5 +1,5 @@
 # IOT-based-Food-Monitoring
-# 🥩 Meat Spoilage Prediction Pipeline
+# Meat Spoilage Prediction Pipeline
 
 A machine learning pipeline that predicts **time-to-spoilage** of meat using sensor data (pH, gas, temperature, humidity). Combines Gaussian Process Regression, Support Vector Regression, and a Genetic Algorithm optimizer into a stacked ensemble.
 
@@ -7,7 +7,7 @@ A machine learning pipeline that predicts **time-to-spoilage** of meat using sen
 
 ## How It Works
 
-1. **Load & Resample** — reads `Meat_data_2nd.csv`, resamples to uniform 21-second intervals via linear interpolation
+1. **Load & Resample** — reads `data.csv`, resamples to uniform 21-second intervals via linear interpolation
 2. **Preprocess** — IQR clipping, log transforms, Savitzky-Golay smoothing, 1st/2nd derivatives, composite spoilage index
 3. **Feature Engineering** — lag features, rolling mean/std, time-elapsed
 4. **Genetic Algorithm** — optimizes GPR kernel, SVR hyperparameters, lag steps, and window sizes over 25 generations
@@ -24,21 +24,12 @@ pip install numpy pandas scipy scikit-learn matplotlib
 
 ---
 
-## Usage
-
-Place `Meat_data_2nd.csv` in the same directory, then:
-
-```bash
-python meat_spoilage_pipeline.py
-```
-
-Output prints (spoilage onset + model metrics) and saves 12 graphs to `spoilage_graphs/`.
 
 ---
 
 ## Input Data
 
-`Meat_data_2nd.csv` must contain:
+`data.csv` must contain:
 
 | Column | Description |
 |---|---|
@@ -90,6 +81,6 @@ TSCV_SPLITS       = 5
 
 | Class | pH Range |
 |---|---|
-| Fresh | > 3.8 |
-| Warning | 3.2 – 3.8 |
-| Spoiled | ≤ 3.2 |
+| Fresh | > 3.8(from meat) |
+| Warning | 3.2 – 3.8 (meat) |
+| Spoiled | ≤ 3.2(meat) |
