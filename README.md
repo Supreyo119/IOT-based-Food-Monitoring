@@ -1,5 +1,5 @@
 # IOT-based-Food-Monitoring
-
+Dataset of different food will be update soon after the paper will get to be published.
 
 A machine learning pipeline that predicts **time-to-spoilage** of meat using sensor data (pH, gas, temperature, humidity). Combines Gaussian Process Regression, Support Vector Regression, and a Genetic Algorithm optimizer into a stacked ensemble.
 
