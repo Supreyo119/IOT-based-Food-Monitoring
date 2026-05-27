@@ -62,25 +62,3 @@ pip install numpy pandas scipy scikit-learn matplotlib
 | `11_feature_correlation.png` | Pearson correlation heatmap of engineered features |
 | `12_spoilage_class.png` | Pie chart + timeline of Fresh / Warning / Spoiled labels |
 
----
-
-## Key Config
-
-```python
-SPOILAGE_PH       = 3.2   # pH threshold for spoilage
-ALERT_MINUTES     = 60    # alert if predicted time-to-spoil < 60 min
-GA_POP_SIZE       = 20
-GA_GENERATIONS    = 25
-GA_MUTATION_RATE  = 0.15
-TSCV_SPLITS       = 5
-```
-
----
-
-## Spoilage Classes
-
-| Class | pH Range |
-|---|---|
-| Fresh | > 3.8(from meat) |
-| Warning | 3.2 – 3.8 (meat) |
-| Spoiled | ≤ 3.2(meat) |
