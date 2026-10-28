@@ -13,25 +13,25 @@ A machine learning pipeline that predicts **time-to-spoilage** of meat using sen
 ---
 
 ## ML-Based IoT
-![ML-Based IoT](images/ml%20based%20iot%281%29.png)
+![ML-Based IoT](images/ml%20based%20iot.png)
 
 ## Project Overview
-![Project Overview](images/project-overview-2.drawio%281%29.png)
+![Project Overview](images/project-overview-2.drawio.png)
 
 ## Food Quality: Meat and Fish
-![Food Quality: Meat and Fish](images/Food-Quality-meat-fish-2%281%29.png)
+![Food Quality: Meat and Fish](images/Food-Quality-meat-fish-2.png)
 
 ## Food Quality: Eggs
-![Food Quality: Eggs](images/Food-Quality-Egg-3%281%29.png)
+![Food Quality: Eggs](images/Food-Quality-Egg-3.png)
 
 ## Connection Diagram
-![Connection Diagram](images/Connection-Diagram%281%29.png)
+![Connection Diagram](images/Connection-Diagram.png)
 
 ## Box Circuit
-![Box Circuit](images/box-circuit%281%29.png)
+![Box Circuit](images/box-circuit.png)
 
 ## Box and Hardware
-![Box and Hardware](images/box-and-hardware.drawio%281%29.png)
+![Box and Hardware](images/box-and-hardware.drawio.png)
 
 ## Architecture Flow
-![Architecture Flow](images/architecture-flow-2%281%29.png)
+![Architecture Flow](images/architecture-flow-2.png)
